@@ -1006,7 +1006,7 @@ class _LoginscreenState extends State<Loginscreen> {
                         ),
                         child: ClipOval(
                           child: Image.asset(
-                            cinefo__logo,
+                            cinefoprimarylogo,
                             // cinefoagent,
                             // cinefodriver,
                             fit: BoxFit.cover,

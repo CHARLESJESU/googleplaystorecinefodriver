@@ -239,7 +239,8 @@ class _SplashScreenState extends State<SplashScreen> {
                         child: Image.asset(
                           // 'assets/tenkrow.png',
                           // cinefoagent,
-                          cinefodriver,
+                          // cinefodriver,
+                          cinefoprimarylogo,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -249,8 +250,8 @@ class _SplashScreenState extends State<SplashScreen> {
 
                     // App Title
                     Text(
-                      // 'Agent App',
-                     'Driver App',
+                      // 'Cinefo Driver',
+                     'Cinefo Agent',
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,

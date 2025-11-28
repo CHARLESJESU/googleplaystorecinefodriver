@@ -108,7 +108,7 @@ String cinefoagent='assets/cine agent.png';
 String cinefodriver='assets/driver_union_logo.png';
 String cinefoproduction='assets/tenkrow.png';
 String cinefologo='assets/cinefo-logo.png';
-String cinefo__logo='assets/cinefoprimarylogo.png';
+String cinefoprimarylogo='assets/cinefomainlogo.jpeg';
 
 // Global RouteObserver used by pages that implement RouteAware to refresh on navigation
 final RouteObserver<ModalRoute<void>> routeObserver =
