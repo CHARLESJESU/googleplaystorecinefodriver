@@ -7,6 +7,8 @@ import 'package:production/Screens/Login/loginscreen.dart';
 import 'package:production/Screens/Route/RouteScreenfordriver.dart';
 import 'package:production/Screens/Route/RouteScreenforincharge.dart';
 
+import '../../service/update_service.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -20,6 +22,12 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     _initializeSplashScreen();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      // Optional: you may want to check remote-config or a flag before forcing update.
+      UpdateService.checkAndPerformUpdate(context);
+    });
+
   }
 
   Future<void> _initializeSplashScreen() async {
